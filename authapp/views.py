@@ -16,16 +16,16 @@ def signup(request):
       
         if len(username)>10 or len(username)<10:
             messages.info(request,"Phone Number Must be 10 Digits")
-            return redirect('/signup')
+            return redirect('/signup/')
 
         if pass1!=pass2:
             messages.info(request,"Password is not Matching")
-            return redirect('/signup')
+            return redirect('/signup/')
        
         try:
             if User.objects.get(username=username):
                 messages.warning(request,"Phone Number is Taken")
-                return redirect('/signup')
+                return redirect('/signup/')
            
         except Exception as identifier:
             pass
@@ -34,7 +34,7 @@ def signup(request):
         try:
             if User.objects.get(email=email):
                 messages.warning(request,"Email is Taken")
-                return redirect('/signup')
+                return redirect('/signup/')
            
         except Exception as identifier:
             pass
