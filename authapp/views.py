@@ -83,3 +83,6 @@ def contact(request):
         return redirect('/contact')
         
     return render(request,"contact.html")
+
+def enroll(request):
+    return render(request,"enroll.html")
