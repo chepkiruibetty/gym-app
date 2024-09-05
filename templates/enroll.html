@@ -83,15 +83,12 @@ Enrollment
           />
         </div>
 
-
         <div class="form-group">
-           
                      <select  class="form-control mt-2" id="member" name="member"  required>
                      <option selected>Select Membership Plan</option>
                           {% for  p in Membership %}
-                          
-
-<option value="{{p.plan}} - {{p.price}}">{{p.plan}} - {{p.price}} Rs</option>
+<option value="{{p.plan}} - {{p.price}}">{{p.plan}} - {{p.price}}Ksh</option>
+                     
 {% endfor %}
 
 </select>

@@ -88,7 +88,6 @@ def enroll(request):
     if not request.user.is_authenticated:
         messages.warning(request,"Please Login and Try Again")
         return redirect('/login')
-
     Membership=MembershipPlan.objects.all()
     SelectTrainer=Trainer.objects.all()
     context={"Membership":Membership,"SelectTrainer":SelectTrainer}
@@ -106,7 +105,5 @@ def enroll(request):
         query.save()
         messages.success(request,"Thanks For Enrollment")
         return redirect('/join')
-
-
 
     return render(request,"enroll.html",context)
