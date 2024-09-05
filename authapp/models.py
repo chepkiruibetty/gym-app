@@ -18,6 +18,9 @@ class Enrollment(models.Model):
     SelectTrainer=models.CharField(max_length=55)
     Reference=models.CharField(max_length=55)
     Address=models.TextField()
+    paymentStatus=models.CharField(max_length=55,blank=True,null=True)
+    Price=models.IntegerField(max_length=55,blank=True,null=True)
+    DueDate=models.DateTimeField(blank=True,null=True)
     timeStamp=models.DateTimeField(auto_now_add=True,blank=True)
     def __str__(self):
         return self.FullName
