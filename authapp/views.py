@@ -71,3 +71,6 @@ def handlelogout(request):
      messages.success(request,"Logout Success")
      return redirect('/login')
      
+def contact(request):
+    return render(request,"contact.html")
+     
