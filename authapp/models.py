@@ -12,6 +12,7 @@ class Contact(models.Model):
 class Enrollment(models.Model):
     FullName=models.CharField(max_length=25)
     Email=models.EmailField()
+    Gender=models.CharField(max_length=25,default='Male')
     PhoneNumber=models.CharField(max_length=12)
     DOB=models.CharField(max_length=50)
     SelectMembershipplan=models.CharField(max_length=200)
