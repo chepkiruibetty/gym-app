@@ -107,3 +107,14 @@ def enroll(request):
         return redirect('/join')
 
     return render(request,"enroll.html",context)
+
+def profile(request):
+    if not request.user.is_authenticated:
+        messages.warning(request,"Please Login and Try Again")
+        return redirect('/login')
+    user_phone=request.user
+    posts=Enrollment.objects.filter(PhoneNumber=user_phone)
+    # attendance=Attendance.objects.filter(phonenumber=user_phone)
+    print(posts)
+    context={"posts":posts}
+    return render(request,"profile.html",context)
