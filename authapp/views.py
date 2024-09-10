@@ -118,3 +118,6 @@ def profile(request):
     print(posts)
     context={"posts":posts}
     return render(request,"profile.html",context)
+
+def gallery(request):
+    return render(request,"gallery.html")
