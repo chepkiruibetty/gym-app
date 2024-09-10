@@ -40,3 +40,5 @@ class MembershipPlan(models.Model):
     price=models.IntegerField(max_length=55)
     def __int__(self):
         return self.id
+    
+    
