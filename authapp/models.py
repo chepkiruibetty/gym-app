@@ -43,6 +43,8 @@ class MembershipPlan(models.Model):
     
 class Gallery(models.Model) :
     title=models.CharField(max_length=100)
-    img=models.ImageField()
+    img=models.ImageField(upload_to='gallery')
     timeStamp=models.DateTimeField(auto_now_add=True,blank=True)
+    def __int__(self):
+        return self.id
     
