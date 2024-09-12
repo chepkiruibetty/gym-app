@@ -12,6 +12,6 @@ urlpatterns = [
     path('join',views.enroll,name='enroll'),
     path('profile',views.profile,name='profile'),
     path('gallery',views.gallery,name='gallery'),
-    
+    path('attendance',views.attendance,name='attendance'),
 ]
 
