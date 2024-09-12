@@ -116,7 +116,7 @@ def profile(request):
     posts=Enrollment.objects.filter(PhoneNumber=user_phone)
     attendance=Attendance.objects.filter(phonenumber=user_phone)
     print(posts)
-    context={"posts":posts}
+    context={"posts":posts,"attendance":attendance}
     return render(request,"profile.html",context)
 
 def gallery(request):
