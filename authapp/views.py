@@ -6,7 +6,8 @@ from authapp.models import Contact,MembershipPlan,Trainer,Enrollment,Gallery,Att
 # Create your views here.
 def Home(request):
     return render(request,"index.html")
-
+def about(request):
+     return render(request,"about.html")
 def signup(request):
     if request.method=="POST":
         username=request.POST.get('usernumber')
