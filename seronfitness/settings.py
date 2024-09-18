@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-n5i*iz_jmi3thbnn77yh=_$tidgi*b#(hig^8h*e-ls5bgc*#o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['seronfitness.vercel.app', 'localhost', '127.0.0.1']
+
 
 
 # Application definition
