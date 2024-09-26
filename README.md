@@ -14,10 +14,7 @@ This Gym website provides users with an easy-to-navigate interface for booking c
 * Choose the trainer  
 * Choose the time you will be available  
   
-## deployed link
-- https://ancient-falls-03714.herokuapp.com/
 
-  
 ### Setup and Installation  
 To get the project .......  
   
